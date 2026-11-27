@@ -7,7 +7,7 @@ import numpy as np
 API_URL = "http://localhost:8000"
 st.title("TaxiFare prediction")
 
-st.write("Enter your trip information to estimate the fare.")
+st.write("Entrer ses informations pour avoir le cout du taxi.")
 
 with st.form("prediction_form"):
     pickup_datetime = st.text_input(
@@ -57,7 +57,7 @@ if submitted:
         response.raise_for_status()
         prediction = response.json()
 
-        st.success(f"Estimated fare: ${prediction['fare']:.2f}")
+        st.success(f"Cout Estimé: ${prediction['fare']:.2f}")
 
     except requests.exceptions.RequestException as error:
         st.error(f"API connection error: {error}")
