@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 API_URL = st.secrets["API_URL"]
-
+#
 st.title("TaxiFare prediction")
 
 st.write("Entrer ses informations pour avoir le cout du taxi.")
