@@ -3,8 +3,8 @@ import requests
 import pandas as pd
 import numpy as np
 
-#API_URL = st.secrets["API_URL"]
-API_URL = "http://localhost:8000"
+API_URL = st.secrets["API_URL"]
+
 st.title("TaxiFare prediction")
 
 st.write("Entrer ses informations pour avoir le cout du taxi.")
